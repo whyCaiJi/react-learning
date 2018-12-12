@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import Intro from './components/Intro';
+import Intro from '../Intro';
 import './App.css';
 
 // Customized components to be capitalized, differentiating from in-built tags
@@ -7,6 +7,11 @@ import './App.css';
 
 
 class App extends Component {
+  // The concept state is a bit similar to class static attribute
+  state = {
+    series: []
+  }
+
   render() {
     return (
       <div className="App">
@@ -14,6 +19,7 @@ class App extends Component {
           <h1 className="App-title">TV Series List</h1>
         </header>
         <Intro message="Here you can find all of your most loved series" />
+        The length of series array - {this.state.series.length}
       </div>
     );
   }
