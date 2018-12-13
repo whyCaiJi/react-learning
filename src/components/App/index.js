@@ -12,6 +12,15 @@ class App extends Component {
     series: []
   }
 
+  // Lifecycle tutorial: needs to understand callback function
+  componentDidMount() {
+    const series = ["Vikings", "Game of Thrones"];
+
+    setTimeout(() => {
+      this.setState({ series });
+    }, 2000);
+  }
+
   render() {
     return (
       <div className="App">
