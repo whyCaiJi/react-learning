@@ -29,6 +29,7 @@ class SingleSeries extends Component {
 						<p>Rating - {show.rating.average}</p>
 						<img alt="Show" src={show.image.medium} />
 					</div>
+				}
 			</div>
 		)
 	}
